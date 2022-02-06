@@ -60,3 +60,29 @@ p {
     font-size: 2.4rem;
   }
 }
+
+/*Links*/
+a {
+  text-decoration: none;
+}
+
+.link {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.link:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  font-size: 1.5rem;
+}
