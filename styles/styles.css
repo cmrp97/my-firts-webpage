@@ -5,6 +5,7 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
 }
 
 *,
@@ -168,6 +169,10 @@ a {
   fill: var(--color-primary);
 }
 
+.icon--white {
+  fill: #fff;
+}
+
 .icon-container {
   width: 64px;
   height: 64px;
@@ -238,6 +243,43 @@ a {
 
 @media screen and (min-width: 1024px) {
   .button {
+    font-size: 1.5rem;
+  }
+}
+
+/* Input */
+.input {
+  border: 1px solid var(--color-border);
+  border-radius: 30px;
+  border: 0;
+  color: var(--color-headings);
+  font-size: 2rem;
+}
+
+::placeholder {
+  color: #dbdae2;
+}
+
+.input-group {
+  border: 1px solid var(--color-border);
+  margin: 1rem;
+  display: flex;
+  border-radius: 30px;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1rem 1.5rem;
+}
+
+.input-group .button {
+  border-radius: 30px;
+  margin: 4px;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
     font-size: 1.5rem;
   }
 }
