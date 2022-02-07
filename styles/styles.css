@@ -7,6 +7,12 @@
   --color-body: #918ca4;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* Typography */
 html {
   /* 62.5% of 16px = 10px*/
@@ -84,7 +90,9 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  font-size: 1.5rem;
+  .link {
+    font-size: 1.5rem;
+  }
 }
 
 /*Badges*/
@@ -168,4 +176,68 @@ a {
   border-radius: 100%;
   justify-content: center;
   align-items: center;
+}
+
+/*Buttons*/
+
+.button {
+  border-radius: 40px;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0;
+  padding: 2rem 4rem;
+  cursor: pointer;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.button--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.button--primary:hover {
+  background: #3783e7;
+}
+
+.button--secundary {
+  background: var(--color-secundary);
+  color: #fff;
+}
+
+.button--secundary:hover {
+  background: #41defa;
+}
+
+.button--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.button--accent:hover {
+  background: #fb481b;
+}
+
+.button--outline {
+  background: #fff;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+
+.button--outline:hover {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+.button--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
+  }
 }
