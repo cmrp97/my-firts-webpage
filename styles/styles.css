@@ -299,11 +299,13 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1rem 2rem;
+  width: 0; /*Para que el boton no se salga*/
 }
 
 .input-group .button {
   border-radius: 30px;
   margin: 4px;
+  padding: 2rem 4vw; /* Cambiar el boton de tamaño segun el tamaño de la pantalla*/
 }
 
 @media screen and (min-width: 1024px) {
@@ -752,7 +754,7 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   max-width: 700px;
