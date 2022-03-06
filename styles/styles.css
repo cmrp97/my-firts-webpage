@@ -206,7 +206,7 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   border: 0;
-  padding: 2rem 4rem;
+  padding: 2rem 4vw;
   cursor: pointer;
   text-align: center;
   margin: 1rem 0;
@@ -325,7 +325,7 @@ a {
 
 .card__header,
 .card__body {
-  padding: 2rem 3rem;
+  padding: 2rem 7%;
 }
 
 .card--primary .card__header {
@@ -375,10 +375,6 @@ a {
   font-weight: 300;
   letter-spacing: 1px;
   display: block;
-}
-
-.card__body {
-  margin: 2rem 4rem;
 }
 
 .plan .list__item {
@@ -569,6 +565,11 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .block--container .callout {
+    position: relative;
+    bottom: -7rem;
+  }
+
   .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
   }
@@ -865,6 +866,7 @@ a {
 @media screen and (min-width: 768px) {
   .footer {
     font-size: 1.5rem;
+    padding-top: 10rem;
   }
 
   .footer .grid {
